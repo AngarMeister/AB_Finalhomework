@@ -725,3 +725,339 @@ ALTER TABLE TOOTAJA_TOOREISIS_KULUD ADD CONSTRAINT TOOTAJA_TOOREISIS_KULUD_TOOTA
 ALTER TABLE TOOTAJA_TOOREISIS ADD CONSTRAINT TOOTAJA_TOOREISIS_TOOREIS FOREIGN KEY TOOTAJA_TOOREISIS_TOOREIS (TOOREIS_tooreis_ID)
     REFERENCES TOOREIS (tooreis_ID);
     
+INSERT INTO AMET VALUES
+(1, 'Raamatupidaja', '2020-01-01', NULL, 1500.00, 'Näidis kommentaar'),
+(2, 'Analüütik', '2020-01-01', NULL, 2000.00, 'Näidis kommentaar'),
+(3, 'Projektijuht', '2020-01-01', NULL, 2500.00, 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO FIRMA_LIIK VALUES
+(1, 'FINANTS', '2020-01-01', NULL, 'Näidis kommentaar'),
+(2, 'LAW', '2020-01-01', NULL, 'Näidis kommentaar'),
+(3, 'DOCUEMTNS', '2020-01-01', NULL, 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO RIIK VALUES
+(1, 'Eesti', 'EE', '2020-01-01', NULL, 'Näidis kommentaar'),
+(2, 'Soome', 'FI', '2021-01-01', NULL, 'Näidis kommentaar'),
+(3, 'Läti', 'LV', '2022-01-01', NULL, 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO TEENUSE_LIIK VALUES
+(1, 'IT-teenus', 'Näidis kommentaar'),
+(2, 'Raamatupidamis-teenus', 'Näidis kommentaar'),
+(3, 'Õigusabi-teenus', 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO PORTFELLI_LIIK VALUES
+(1, 'Aktsiaportfell', 'Näidis kommentaar'),
+(2, 'Võlakirjaportfell', 'Näidis kommentaar'),
+(3, 'Segaportfell', 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO MAKSUDE_LIIK VALUES
+(1, 'Tulumaks', 'Näidis komm.'),
+(2, 'Sotsiaalmaks', 'Näidis komm.'),
+(3, 'Käibemaks', 'Näidis komm.');
+COMMIT;
+
+INSERT INTO TOOREIS_LIIK VALUES
+(1, 'Konverents', 'Näidis kommentaar'),
+(2, 'Koolitus', 'Näidis kommentaar'),
+(3, 'Koosolek', 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO TOOTAJA_TOOREISIS_KULUD_LIIK VALUES
+(1, 'Transport', 'Näidis komm.'),
+(2, 'Majutus', 'Näidis komm.'),
+(3, 'Lõuna', 'Näidis komm.');
+COMMIT;
+
+INSERT INTO ISIK VALUES
+(1, 'Mati', '39001010000', '1965-01-01', NULL),
+(2, 'Kati', '49001010000', '2000-01-01', NULL),
+(3, 'Juhan', '38001010000', '1970-01-01', NULL);
+COMMIT;
+
+INSERT INTO OFFSHORE_ALA VALUES
+(1, 'Cayman Islands', 'Näidis offshore-kommentaar', 1),
+(2, 'Bahamas', 'Näidis offshore-kommentaar', 1),
+(3, 'Panama', 'Näidis offshore-kommentaar', 2);
+COMMIT;
+
+INSERT INTO PANK VALUES
+(1, 'Swedbank', '2020-01-01', NULL, 'Näidis kommentaar'),
+(2, 'SEB', '2020-01-01', NULL, 'Näidis kommentaar'),
+(3, 'Nordea', '2020-01-01', NULL, 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO LEPING_LIIK VALUES
+(1, 'Tähtajaline tööleping', '2020-01-01', NULL, 'Näidis kommentaar'),
+(2, 'Määramata tööleping', '2021-01-01', NULL, 'Näidis kommentaar'),
+(3, 'Vabakutselise leping', '2022-01-01', NULL, 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO FOND VALUES
+(1, 'Pensionifond A', '2020-01-01', NULL, 'Näidis kommentaar'),
+(2, 'Investeerimisfond B', '2020-01-01', NULL, 'Näidis kommentaar'),
+(3, 'Riskifond C', '2020-01-01', NULL, 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO FIRMA VALUES
+(1, 'Firma A', '2020-01-01', NULL, '1234567', 1),
+(2, 'Firma B', '2021-05-10', NULL, '2345678', 2),
+(3, 'Firma C', '2022-03-15', NULL, '3456789', 3);
+COMMIT;
+
+INSERT INTO BILANSS VALUES
+(1, '2020-12-31', '2020-01-01', '2020-12-31', 100000.00, 80000.00, 20000.00, 5000.00, 'Bilanss 2020', 1, 1),
+(2, '2021-12-31', '2021-01-01', '2021-12-31', 120000.00, 90000.00, 30000.00, 8000.00, 'Bilanss 2021', 2, 2),
+(3, '2022-12-31', '2022-01-01', '2022-12-31', 130000.00, 95000.00, 35000.00, 10000.00, 'Bilanss 2022', 3, 3);
+COMMIT;
+
+INSERT INTO LEPING VALUES
+(1, '2020-06-01', NULL, TRUE, TRUE, 1, 1, 1, 1),
+(2, '2021-07-01', NULL, TRUE, FALSE, 2, 2, 2, 2),
+(3, '2022-08-01', NULL, FALSE, TRUE, 3, 3, 3, 3);
+COMMIT;
+
+INSERT INTO AMET_LEPINGUS VALUES
+(1, '2020-06-01', NULL, 'Näidis kommentaar', 1, 1),
+(2, '2021-07-01', NULL, 'Näidis kommentaar', 2, 2),
+(3, '2022-08-01', NULL, 'Näidis kommentaar', 3, 3);
+COMMIT;
+
+INSERT INTO FONDI_FIRMA_SEOSE_LIIK VALUES
+(1, '2020-01-01', NULL, 'Lepinguline', 'Näidis kommentaar'),
+(2, '2020-01-01', NULL, 'Sponsor', 'Näidis kommentaar'),
+(3, '2020-01-01', NULL, 'Partner', 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO FONDI_FIRMA_SEOS VALUES
+(1, '2020-05-01', NULL, 'Koostöö algus', 1, 1, 1),
+(2, '2021-06-01', NULL, 'Koostöö algus', 2, 2, 2),
+(3, '2022-07-01', NULL, 'Koostöö algus', 3, 3, 3);
+COMMIT;
+
+INSERT INTO FONDI_KULUD_LIIK VALUES
+(1, 'Haldustasu', 'Näidis kommentaar'),
+(2, 'Reklaamikulu', 'Näidis kommentaar'),
+(3, 'Teenustasu', 'Näidis kommentaar');
+COMMIT;
+
+INSERT INTO TOOREIS VALUES
+(1, '2020-05-01', '2020-05-05', 'Osalemine konverentsil', 'Näidis kommentaar', 1),
+(2, '2021-06-10', '2021-06-15', 'Koolitus IT-alal', 'Näidis kommentaar', 2),
+(3, '2022-07-20', '2022-07-22', 'Rahvusvaheline koosolek', 'Näidis kommentaar', 3);
+COMMIT;
+
+INSERT INTO FONDI_KULUD VALUES
+(1, 1000.00, '2020-05-01', '2020-05-05', 'Seotud konverentsiga', 1, 1, 1),
+(2, 2000.00, '2021-06-10', '2021-06-15', 'Seotud koolitusega', 2, 2, 2),
+(3, 3000.00, '2022-07-20', '2022-07-22', 'Seotud koosolekuga', 3, 3, 3);
+COMMIT;
+
+INSERT INTO FONDI_OMANIK VALUES
+(1, '2020-01-01', NULL, 'Näidis kommentaar', 10.00, 1),
+(2, '2020-01-01', NULL, 'Näidis kommentaar', 20.00, 2),
+(3, '2020-01-01', NULL, 'Näidis kommentaar', 30.00, 3);
+COMMIT;
+
+INSERT INTO FONDI_OMAMINE VALUES
+(1, '2020-01-01', NULL, 'Osalus A', 1, 1),
+(2, '2020-01-01', NULL, 'Osalus B', 2, 2),
+(3, '2020-01-01', NULL, 'Osalus C', 3, 3);
+COMMIT;
+
+INSERT INTO PORTFELL VALUES
+(1, 'Aktsiad X', 10000.00, '2020-01-01', NULL, 'Näidis kommentaar', 1),
+(2, 'Võlakirjad Y', 20000.00, '2020-01-01', NULL, 'Näidis kommentaar', 2),
+(3, 'Segaportfell Z', 15000.00, '2020-01-01', NULL, 'Näidis kommentaar', 3);
+COMMIT;
+
+INSERT INTO FONDI_PORFELL VALUES
+(1, '2020-01-01', NULL, 'Fond A investeerib portfelli X', 1, 1),
+(2, '2020-01-01', NULL, 'Fond B investeerib portfelli Y', 2, 2),
+(3, '2020-01-01', NULL, 'Fond C investeerib portfelli Z', 3, 3);
+COMMIT;
+
+INSERT INTO INVESTEERING_PORTFELLIS_LIIK VALUES
+(1, 'Aktsia', NULL),
+(2, 'Võlakiri', NULL),
+(3, 'Fondiosak', NULL);
+COMMIT;
+
+INSERT INTO INVESTEERING_PORTFELLIS VALUES
+(1, 5000.00, '2020-01-01', NULL, 2.50, 5.00, 'Aktsiainvest.', 1, 1),
+(2, 8000.00, '2020-01-01', NULL, 3.00, 6.00, 'Võlakirjainvest.', 2, 2),
+(3, 2000.00, '2020-01-01', NULL, 1.00, 2.00, 'Fondiosakud', 3, 3);
+COMMIT;
+
+INSERT INTO OBLIGATSIOONI_LISA VALUES
+(1, '2020-02-01', '2025-02-01', 2.00, 'aastas', 5000.00, 'Näidis komm.', 2, 1),
+(2, '2020-03-01', '2026-03-01', 3.50, 'kvartalis', 8000.00, 'Näidis komm.', 2, 2),
+(3, '2020-04-01', '2027-04-01', 1.80, 'poolaastas', 2000.00, 'Näidis komm.', 3, 3);
+COMMIT;
+
+INSERT INTO OFFSHORE_ESINDAJA VALUES
+(1, '2020-02-01', NULL, 500.00, 'Tasu esindamise eest', 1, 1, 1),
+(2, '2021-03-01', NULL, 700.00, 'Tasu esindamise eest', 2, 2, 2),
+(3, '2022-04-01', NULL, 1000.00, 'Tasu esindamise eest', 3, 3, 3);
+COMMIT;
+
+INSERT INTO FOND_OFFSHORE_ESINDAJA VALUES
+(1, '2020-01-01', NULL, 'Näidis kommentaar 1', 1, 1),
+(2, '2021-02-01', NULL, 'Näidis kommentaar 2', 2, 2),
+(3, '2022-03-01', NULL, 'Näidis kommentaar 3', 3, 3);
+COMMIT;
+
+INSERT INTO FOND_PANGAS VALUES
+(1, '2020-01-01', NULL, 'Näidis kommentaar 1', 1, 1),
+(2, '2021-01-01', NULL, 'Näidis kommentaar 2', 2, 2),
+(3, '2022-01-01', NULL, 'Näidis kommentaar 3', 3, 3);
+COMMIT;
+
+INSERT INTO FONDI_TULUD_LIIK VALUES
+(1, 'Dividendid', 'Näidis komm.'),
+(2, 'Intressid', 'Näidis komm.'),
+(3, 'Kapitalikasum', 'Näidis komm.');
+COMMIT;
+
+INSERT INTO FONDI_TULUD VALUES
+(1, '2020-06-01', 500.00, 'Saadud dividendid', 1, 1, 1),
+(2, '2021-07-01', 1000.00, 'Saadud intressid', 2, 2, 2),
+(3, '2022-08-01', 1500.00, 'Kapitali kasv', 3, 3, 3);
+COMMIT;
+
+INSERT INTO MAKSUD VALUES
+(1, 20.00, '2020-01-01', '2020-12-31', 'Näidis komm.', 1, 1),
+(2, 22.00, '2021-01-01', '2021-12-31', 'Näidis komm.', 2, 2),
+(3, 18.00, '2022-01-01', '2022-12-31', 'Näidis komm.', 3, 3);
+COMMIT;
+
+INSERT INTO FONDI_TULUD_MAKSUD VALUES
+(1, 100.00, '2020-06-02', 'Maks 20%', 20.00, 1, 1),
+(2, 220.00, '2021-07-02', 'Maks 22%', 22.00, 2, 2),
+(3, 270.00, '2022-08-02', 'Maks 18%', 18.00, 3, 3);
+COMMIT;
+
+INSERT INTO KONTOR VALUES
+(1, 'Tallinn Office', '2020-01-01', NULL, 'Tallinna kontor'),
+(2, 'Tartu Office', '2020-01-01', NULL, 'Tartu kontor'),
+(3, 'Helsinki Office', '2020-01-01', NULL, 'Helsingi kontor');
+COMMIT;
+
+INSERT INTO KONTOR_FIRMAS VALUES
+(1, '2020-01-01', NULL, 'Firma A Tallinna kontor', 1, 1),
+(2, '2021-01-01', NULL, 'Firma B Tartu kontor', 2, 2),
+(3, '2022-01-01', NULL, 'Firma C Helsingi kontor', 3, 3);
+COMMIT;
+
+INSERT INTO SEOS_RIIGIGA_LIIK VALUES
+(1, 'Registrijärgne riik', 'Näidis komm.'),
+(2, 'Maksukohustuslane', 'Näidis komm.'),
+(3, 'Peamine asukoht', 'Näidis komm.');
+COMMIT;
+
+INSERT INTO SEOS_RIIGIGA VALUES
+(1, '2020-01-01', NULL, 'Eesti registris', 1, 1, 1, 1, 1, 1, 1),
+(2, '2021-01-01', NULL, 'Soome maksukohustus', 2, 2, 2, 2, 2, 2, 2),
+(3, '2022-01-01', NULL, 'Läti asukoht', 3, 3, 3, 3, 3, 3, 3);
+COMMIT;
+
+SELECT * FROM SEOS_RIIGIGA;
+
+INSERT INTO TEENUS VALUES
+(1, 'Veebiarendus', 100.00, '2020-01-01', NULL, 'Näidis komm.', 1),
+(2, 'Kuuraamatupidamine', 200.00, '2020-01-01', NULL, 'Näidis komm.', 2),
+(3, 'Lepingunõustamine', 300.00, '2020-01-01', NULL, 'Näidis komm.', 3);
+COMMIT;
+
+INSERT INTO TEENUS_LEPINGUS VALUES
+(1, '2020-06-01', NULL, 'aktiivne', 1, 1),
+(2, '2021-07-01', NULL, 'aktiivne', 2, 2),
+(3, '2022-08-01', NULL, 'lõpetatud', 3, 3);
+COMMIT;
+
+INSERT INTO TOOREIS_KOHT VALUES
+(1, 'Tallinn', '2020-05-01', '2020-05-05', 1),
+(2, 'Tartu', '2021-06-10', '2021-06-15', 2),
+(3, 'Helsinki', '2022-07-20', '2022-07-22', 3);
+COMMIT;
+
+INSERT INTO TOOTAJA_TOOREISIS VALUES
+(1, '2020-05-01', '2020-05-05', 'Näidis komm.', 1, 1),
+(2, '2021-06-10', '2021-06-15', 'Näidis komm.', 2, 2),
+(3, '2022-07-20', '2022-07-22', 'Näidis komm.', 3, 3);
+COMMIT;
+
+INSERT INTO TOOTAJA_TOOREISIS_KULUD VALUES
+(1, 50.00, '2020-05-01', '2020-05-05', 'Transport kulud', 1, 1, 1),
+(2, 100.00, '2021-06-10', '2021-06-15', 'Majutus kulud', 2, 2, 2),
+(3, 80.00, '2022-07-20', '2022-07-22', 'Lõunasöögid', 3, 3, 3);
+COMMIT;
+
+-- Päring üle ühe tabeli. Päring tagastab kõik ametid, mille palk on suurem kui 2000. See aitab tuvastada kõrgema palgaga ametipositsioone. --
+SELECT amet_nimi, amet_palk FROM AMET WHERE amet_palk > 2000;
+
+-- Päring üle kahe tabeli (LEPING ja FIRMA) --
+SELECT L.leping_ID, L.leping_alates, F.firma_nimi
+FROM LEPING AS L JOIN FIRMA AS F ON L.FIRMA_firma_ID = F.firma_ID
+WHERE L.leping_aktiivne = TRUE AND F.firma_kuni IS NULL;
+
+-- Päring üle kolme tabeli (TOOREIS, TOOREIS_LIIK, TOOREIS_KOHT) --
+SELECT T.tooreis_ID, TL.tooreis_liik_nimi, T.tooreis_alates, TK.tooreis_koht_sihtkoht
+FROM TOOREIS AS T
+JOIN TOOREIS_LIIK AS TL
+     ON T.TOOREIS_LIIK_tooreis_liik_ID = TL.tooreis_liik_ID
+JOIN TOOREIS_KOHT AS TK
+     ON TK.TOOREIS_tooreis_ID = T.tooreis_ID
+WHERE TL.tooreis_liik_nimi = 'Konverents';
+
+
+SELECT * FROM amet;
+SELECT * FROM amet_lepingus;
+SELECT * FROM bilanss;
+SELECT * FROM firma;
+SELECT * FROM firma_liik;
+SELECT * FROM fond;
+SELECT * FROM fond_offshore_esindaja;
+SELECT * FROM fond_pangas;
+SELECT * FROM fondi_firma_seos;
+SELECT * FROM fondi_firma_seose_liik;
+SELECT * FROM fondi_kulud;
+SELECT * FROM fondi_kulud_liik;
+SELECT * FROM fondi_omamine;
+SELECT * FROM fondi_omanik;
+SELECT * FROM fondi_porfell;
+SELECT * FROM fondi_tulud;
+SELECT * FROM fondi_tulud_liik;
+SELECT * FROM fondi_tulud_maksud;
+SELECT * FROM investeering_portfellis;
+SELECT * FROM investeering_portfellis_liik;
+SELECT * FROM isik;
+SELECT * FROM kontor;
+SELECT * FROM kontor_firmas;
+SELECT * FROM leping;
+SELECT * FROM leping_liik;
+SELECT * FROM maksud;
+SELECT * FROM maksude_liik;
+SELECT * FROM obligatsiooni_lisa;
+SELECT * FROM offshore_ala;
+SELECT * FROM offshore_esindaja;
+SELECT * FROM pank;
+SELECT * FROM portfell;
+SELECT * FROM portfelli_liik;
+SELECT * FROM riik;
+SELECT * FROM seos_riigiga;
+SELECT * FROM seos_riigiga_liik;
+SELECT * FROM teenus;
+SELECT * FROM teenus_lepingus;
+SELECT * FROM teenuse_liik;
+SELECT * FROM tooreis;
+SELECT * FROM tooreis_koht;
+SELECT * FROM tooreis_liik;
+SELECT * FROM tootaja_tooreisis;
+SELECT * FROM tootaja_tooreisis_kulud;
+SELECT * FROM tootaja_tooreisis_kulud_liik;    
+    
